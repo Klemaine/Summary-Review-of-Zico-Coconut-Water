@@ -12,7 +12,7 @@ def make_plot(sentiments: list) -> list:
         None
     """
     if not isinstance(sentiments, list) or not all(isinstance(item, str) for item in sentiments):
-        return "Input must be a list of strings representing sentiment counts."
+        return "Input must be a list of strings representing sentiment categories."
 
     labels = ["positive", "negative", "neutral", "irrelevant"]
     
